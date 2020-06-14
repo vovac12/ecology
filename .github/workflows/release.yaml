@@ -1,6 +1,9 @@
-name: Build latex presentation
+name: Release
 on:
   push:
+    tags:
+      - 'v*'
+  pull_request:
     tags:
       - 'v*'
 
@@ -16,11 +19,6 @@ jobs:
           fetch-depth: 0
       - name: Build
         run: latexmk -f -pdf main.tex
-      - name: Save PDF
-        uses: actions/upload-artifact@v2
-        with:
-          name: main.pdf
-          path: main.pdf
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -29,7 +27,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          draft: true
+          draft: false
           prerelease: false
       - name: Upload Release Asset
         id: upload-release-asset 
