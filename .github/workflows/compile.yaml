@@ -4,7 +4,16 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: mirisbowring/texlive_ctan_full:2019
+    runs-on: ubuntu-latest
+    container: mirisbowring/texlive_ctan_full:2019
     steps:
+      - name: Install Node
+        run: |
+          apt update -y
+          apt install -y nodejs
       - name: Build
-        run: echo 'Hello'
+        run: latexmk -f -pdf main.tex
+      - name: Save PDF
+        uses: actions/download-artifact@v2
+        with:
+          name: main.pdf
