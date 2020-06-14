@@ -11,7 +11,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/vovac12/ecology.svg)
 ](https://github.com/vovac12/ecology/issues/)
 
-
 ## Авторы
 
  - Рязанов Максим
