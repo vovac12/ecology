@@ -1,0 +1,10 @@
+name: Build latex presentation
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: mirisbowring/texlive_ctan_full:2019
+    steps:
+      - name: Build
+        run: echo 'Hello'
