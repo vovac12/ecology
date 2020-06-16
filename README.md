@@ -1,5 +1,8 @@
 # Презентация по Экологии в МГТУ им. Н. Э. Баумана
 
+<img src="./assets/logo.png" alt="logo"
+ style="display: block; margin-right: auto; margin-left: auto; width: 25%;"/>
+
 ![Build](https://github.com/vovac12/ecology/workflows/Build/badge.svg)
 ![Release](https://github.com/vovac12/ecology/workflows/Release/badge.svg)
 [![made-with-latex](https://img.shields.io/badge/Made%20with-LaTeX-1f425f.svg)](https://www.latex-project.org/)
