@@ -1,6 +1,6 @@
 # Презентация по Экологии в МГТУ им. Н. Э. Баумана
 
-<img src="./assets/logo.png" alt="logo"
+<img src="./assets/logo.png" alt="logo" width="200"
  style="display: block; margin-right: auto; margin-left: auto; width: 25%;"/>
 
 ![Build](https://github.com/vovac12/ecology/workflows/Build/badge.svg)
