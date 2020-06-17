@@ -9,3 +9,7 @@
 *.fdb_latexmk
 *.latexmain
 *.toc
+*.bbl
+*.bcf
+*.blg
+*.run.xml
